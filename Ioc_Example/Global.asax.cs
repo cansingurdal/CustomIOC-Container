@@ -7,6 +7,7 @@ using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
 using System.Web.Http;
+using Ioc_Example.Models;
 
 namespace Ioc_Example
 {
@@ -17,6 +18,7 @@ namespace Ioc_Example
             // Code that runs on application startup
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            NinjectHelper.Configure();
             RouteConfig.RegisterRoutes(RouteTable.Routes);            
         }
     }

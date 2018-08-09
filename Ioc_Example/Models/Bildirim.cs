@@ -8,10 +8,11 @@ namespace Ioc_Example.Models
 {
     public class BildirimManagerCreator
     {
-        public static BildirimManager Create()
-        {
-            return new BildirimManager(new MesajGonder());
-        }
+
+        //public static BildirimManager Create()
+        //{
+        //    return new BildirimManager(new MesajGonder());
+        //}
     }
     public class BildirimManager
     {
